@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my first web design essay with HTML and CSS.">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Mohamed Mahdi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="harvard_css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="harvard_img/favicon.png">
+        <script src="https://kit.fontawesome.com/24e138188f.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="main">
+            <header>
+                <nav>
+                    <a href="index.html"><img src="harvard_img/Harvard_University_logo.svg.png" alt="Logo of the web page" ></a>
+                    <div class="nav-links" id = "navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+            </header>
+                
+            <section class="text-box">
+                <h1>Harvard University</h1>
+                <p>Harvard University is a private Ivy League research university in Cambridge, Massachusetts.<br>
+                    Founded in 1636 as Harvard College and named for its first benefactor, the Puritan clergyman John Harvard,<br>
+                    it is the oldest institution of higher learning in the United States and among the most prestigious in the world.</p>
+                <a href="workingonit.html" target="_blank" class="hero-button">Visit us to know more!</a>
+            </section>  
+        </div>
+
+        <!------------------- Course ----------------------->
+        <section id="course">
+            <h1>Examples Of Courses We Offer</h1>
+            <p>Harvard’s extensive catalog of expertise and research is brought to learners around the globe.</p>
+
+            <div class="row">
+                <div class="course-colm">
+                    <h3>Health Care Strategy</h3>
+                    <p>Combine the best business strategies with the fundamentals of the health care sector.<br><br>
+                       Align the principles of business strategy with the unique challenges and structures of
+                       health care organizations, create and capture value, define the mission of your organization,
+                       and lead your organization to success with confidence.</p>
+                </div>
+
+                <div class="course-colm">
+                    <h3>Data Science for Business</h3>
+                    <p>Move beyond the spreadsheet<br><br>
+                        Designed for managers, this Harvard Online course provides a hands-on approach for
+                        demystifying the data science ecosystem and making you a more conscientious consumer
+                        of information.</p>
+                </div>
+                
+                <div class="course-colm">
+                    <h3>Big Data for Social Good</h3>
+                    <p>Big social problems require big data solutions<br><br>
+                       Using real-world data and policy interventions as applications, this Harvard Online
+                       course will teach core concepts in data science, economics, and statistics and equip
+                       you to tackle some of the most pressing social challenges of our time.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!------------------- Campus ----------------------->
+        <section id="campus">
+            <h1>Harvard Campus</h1>
+            <p>Our campus is full of history and discovery—from Harvard Yard to the research hospitals in Mission Hill,
+               from the top of Harvard Stadium to the stacks below Widener Library.</p>
+
+
+
+            <div class="row">
+                <div class="campus-colm">
+                    <img src="harvard_img/campus_1.jpg" alt="Harvard Campus in boston">
+                    <div class="layer">
+                        <h3>BOSTON</h3>
+                    </div>
+                </div>
+
+                <div class="campus-colm">
+                    <img src="harvard_img/campus_2.jpg" alt="Harvard the charles">
+                    <div class="layer">
+                        <h3>THE CHARLES</h3>
+                    </div>
+                </div>
+
+                <div class="campus-colm">
+                    <img src="harvard_img/campus_3.jpg" alt="Harvard Campus">
+                    <div class="layer">
+                        <h3>CAMBRIGE</h3>
+                    </div>
+                </div> 
+
+            </div>
+
+
+        </section>
+
+        <!------------------- IN FOCUS ----------------------->
+
+        <section id="in-focus">
+            <h1>In Focus</h1>
+            <p>In Focus is a window into the ideas, research, and work happening across Harvard communities.
+               Each week we bring a different topic into focus, sharing perspectives on the big conversations
+               of the moment—and sparking new ones.</p>
+
+
+
+            <div class="row">
+                <div class="focus-colm">
+                    <img src="harvard_img/focus_1.jpeg" alt="two women kissing">
+                    <h3>Celebrating Pride</h3>
+                    <figcaption>Meet students and faculty members, explore lessons from history, and discover what is
+                       happening today in the LGBTQ+ community.</figcaption>
+                </div>
+
+                <div class="focus-colm">
+                    <img src="harvard_img/focus_2.jpg" alt="A healthy brain">
+                    <h3>Mental Health</h3>
+                    <figcaption>To commemorate Mental Health Awareness Month, the Harvard community is exploring how we
+                       cope with, manage, and understand mental health and how it impacts our lives.</figcaption>
+                </div>
+
+                <div class="focus-colm">
+                    <img src="harvard_img/focus_3.jpg" alt="Women graduated">
+                    <h3>Celebrating the Graduates</h3>
+                    <figcaption>Students are invited to participate in University-wide Affinity Graduation Ceremonies.</figcaption>
+                </div> 
+
+            </div>
+
+
+        </section>
+
+        <!------------------- SOME OF OUR PROFESSORS ----------------------->
+
+        <section id="Professors" class="Professors">
+            <h1>About Our Professors</h1>
+            <p>Working side by side with undergraduates, Harvard professors encourage students to see with new eyes.
+               Through research, coursework, and casual interactions, students and faculty learn from and challenge
+               each other on a daily basis. We state below two of our best teachers.</p>
+
+            <div class="row">
+                <div class="prof-colm">
+                    <img src="harvard_img/Weinzierl.jpg" alt="The professor">
+                    <div>
+                        <h3>Matthew C. Weinzierl</h3>
+                        <figcaption>Matt Weinzierl is the Joseph and Jacqueline Elbling Professor of Business Administration
+                           in the Business, Government, and the International Economy Unit at Harvard Business School
+                           and a Research Associate at the National Bureau of Economic Research.  His research focuses
+                           on the optimal design of economic policy, in particular taxation, with an emphasis on better
+                           understanding the philosophical principles underlying policy choices.</figcaption>
+                    </div>
+                </div>
+
+                <div class="prof-colm">
+                    <img src="harvard_img/kristen.jpg" alt="The professor">
+                    <div>
+                        <h3>Kristen A. Stilt</h3>
+                        <figcaption>Kristen A. Stilt is Professor of Law and also Faculty Director of the Animal Law & Policy
+                           Program and Director of the Program on Law and Society in the Muslim World. Prior to coming
+                           to HLS, Stilt was Harry R. Horrow Professor in International Law at Northwestern Law School and
+                           Professor of History at Northwestern University. Stilt’s research focuses on Islamic law and society
+                           in both historical and contemporary contexts.  She also writes in the area of Animal Law, and the
+                           intersection of animal law and religion and culture in particular.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------- APPLY FOR A SCHOLARSHIP ----------------------->     
+        
+        <section id="scholarships">
+            <h1>Scholarships For International Students</h1>
+            <a href="workingonit.html" target="_blank" class="hero-button">Apply Here</a>
+        </section>
+
+        <!------------------- FOOTER ----------------------->    
+        
+        <footer id="footer">    
+            <h4>ABOUT THE DEVELOPER</h4>
+            <p>I'm a pre-egineering student and I made this template in order to pratice what I have learned.</p>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/mahdimed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mahdyy02" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <p>Made with <i class="fa-solid fa-heart"></i> by Mohamed Mahdi</p>
+        </footer>
+    
+        <!-- JavaScript code to open and close navigation bar -->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            var x = window.matchMedia("(max-width: 700px)")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+                if (x.matches) {
+                    navLinks.style.display = "inline-block";
+                }    
+            }
+
+
+            function hideMenu(){
+                navLinks.style.right = "-1000px";
+                if (x.matches) {
+                    navLinks.style.display = "none";
+                }    
+            }
+        </script>
+
+    </body> 
+</html>

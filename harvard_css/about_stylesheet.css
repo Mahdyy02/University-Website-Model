@@ -1,0 +1,57 @@
+/* ---------- About ------------ */
+
+.about-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(15, 31, 96, 0.7)), url(../harvard_img/about_harvard.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-header h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+}
+
+.about{
+    position: relative;
+    top: 200px;
+    width: 80%;
+    margin: 0 auto 200px;
+}
+
+.about-colm{
+    margin: 20px;
+}
+
+.about-colm img{
+    margin: 0 auto;
+    width: 70vh;
+    border-radius: 5px;
+    opacity: .7;
+}
+
+@media(max-width:700px){
+    .about-colm img{
+        width: 100%;
+        height: 120%;
+    }    
+}
+
+.about-colm h1{
+    margin: 0 0 20px 0;
+}
+
+.hero-button{
+    margin: 20px 0;
+}
+
+.about-colm h1{
+    font-size: 36px;
+}

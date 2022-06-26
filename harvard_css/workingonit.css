@@ -1,0 +1,27 @@
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20% auto;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -moz-text-stroke: 1px rgb(0, 0, 0);
+    -o-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 50px;
+    background: url(https://i.imgur.com/g1cBc0a.png);
+    background-color: rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}

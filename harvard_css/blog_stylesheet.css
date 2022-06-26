@@ -1,0 +1,76 @@
+/* ---------- Course ------------ */
+
+.blog-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(15, 31, 96, 0.7)), url(../harvard_img/harvard_blog.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.blog-header h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+}
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.colm-left{
+    flex-basis: 55%;
+}
+
+.colm-left img{
+    width: 100%;
+    opacity: .6;
+}
+
+.colm-left h2{
+    color: white;
+    margin: 30px 0;
+}
+
+table{
+    color: rgb(240, 248, 255);
+    width: 120%;
+    margin: 0 3% 3% 0;
+}
+
+@media(max-width: 700px) {
+    table{
+        width: 100%;
+    }
+}
+
+th{
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: rgba(131, 137, 255, 0.6);
+}
+
+td{
+    padding: 5px;
+}
+
+tr th:first-child{
+    text-align: left;
+    word-spacing: 2px;
+}
+
+tr{
+    background-color: rgba(240, 248, 255, .3);
+    transition: 1s;
+}
+
+tr:hover{
+    background-color: rgba(150, 204, 252, 0.6);
+}

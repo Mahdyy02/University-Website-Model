@@ -1,0 +1,20 @@
+/* ---------- Course ------------ */
+
+.course-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(15, 31, 96, 0.7)), url(../harvard_img/harvard_courses.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.course-header h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+}

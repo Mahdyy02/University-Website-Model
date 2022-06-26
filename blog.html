@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my first web design essay with HTML and CSS.">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Mohamed Mahdi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="harvard_img/favicon.png">
+        <script src="https://kit.fontawesome.com/24e138188f.js" crossorigin="anonymous"></script>
+
+        <!-- Link to the global stylesheet -->
+        <link rel="stylesheet" href="harvard_css/stylesheet.css">
+        <!-- Link to the specific stylesheet-->
+        <link rel="stylesheet" href="harvard_css/blog_stylesheet.css">
+    </head>
+    
+
+
+
+    <body>
+
+        <!------------------- Header ----------------------->
+        <div class="blog-header">
+            <header>
+                <nav>
+                    <a href="index.html"><img src="harvard_img/Harvard_University_logo.svg.png" alt="Logo of the web page" ></a>
+                    <div class="nav-links" id = "navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+            </header>
+            <h1>OUR BLOG</h1>
+
+        </div>    
+
+        <!------------------- BLOG -----------------------> 
+        <section class="blog-content">
+            <div class="row">
+                <div class="colm-left">
+                    <img src="harvard_img/harvard_blog_post.jpg" alt="Crowded Students near the entrance of harvard university">
+                    <h2>Post-Graduate Life: An Italian Family & Yoga on the Grass</h2>
+                    <p>Hi everyone!<br><br> My apologies for the sudden disappearance for the last few weeks: with post-graduation festivities and settling into summer housing and programs, things have just begun to smooth out.<br><br>
+                       My time as a student at Harvard may be over now (at least as an undergraduate), but that doesn’t mean I’ve let go of Harvard Square and the Harvard community so easily. This summer I’ll be participating in two programs in Cambridge, MA in conjunction with Harvard College: Harvard-Karma Yoga Community Yoga Teacher Training Certification Program (which I’m in the midst of right now), and a research fellowship with Harvard’s Schlesinger Library (which I will begun right after my teacher training is done).<br><br>
+                       Before I get into the amazing Harvard-Karma program and what its like beginning summer in Boston with a bunch of yogis, I wanted to give a quick update on the graduation festivities!<br><br>
+                       Graduation week (May 21st to the 24th) flew by, attributably largely—I believe—to the fact that I had 10 family members staying with me and touring Boston…</p><br>
+                </div>
+                <div class="colm-right">
+                    <table>
+                        <tr>
+                            <th>Intended field of concentration</th>
+                            <th>Rate</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>Humanities</td>
+                            <td>15.3%</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Social Sciences</td>
+                            <td>28.1%</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Biological Sciences</td>
+                            <td>18.3%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Physical Sciences</td>
+                            <td>7.6%</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Engineering</td>
+                            <td>10.3%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>8.1%</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Math</td>
+                            <td>6.0%</td>
+                        </tr>
+                                                
+                        <tr>
+                            <td>Undecided</td>
+                            <td>6.3%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!------------------- FOOTER ----------------------->    
+        
+        <footer id="footer">    
+            <h4>ABOUT THE DEVELOPER</h4>
+            <p>I'm a pre-egineering student and I made this template in order to pratice what I have learned.</p>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/mahdimed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mahdyy02" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <p>Made with <i class="fa-solid fa-heart"></i> by Mohamed Mahdi</p>
+        </footer>
+    
+        <!-- JavaScript code to open and close navigation bar -->
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            var x = window.matchMedia("(max-width: 700px)")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+                if (x.matches) {
+                    navLinks.style.display = "inline-block";
+                }    
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-1000px";
+                if (x.matches) {
+                    navLinks.style.display = "none";
+                }    
+            }
+        </script>
+
+    </body> 
+</html>

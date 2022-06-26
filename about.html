@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my first web design essay with HTML and CSS.">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Mohamed Mahdi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="harvard_img/favicon.png">
+        <script src="https://kit.fontawesome.com/24e138188f.js" crossorigin="anonymous"></script>
+
+        <!-- Link to the global stylesheet -->
+        <link rel="stylesheet" href="harvard_css/stylesheet.css">
+        <!-- Link to the specific stylesheet-->
+        <link rel="stylesheet" href="harvard_css/about_stylesheet.css">
+    </head>
+    
+
+
+
+    <body>
+
+        <!------------------- Header ----------------------->
+        <div class="about-header">
+            <header>
+                <nav>
+                    <a href="index.html"><img src="harvard_img/Harvard_University_logo.svg.png" alt="Logo of the web page" ></a>
+                    <div class="nav-links" id = "navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+            </header>
+
+            <h1>ABOUT US</h1>
+        </div>    
+
+        <!------------------- ABOUT US -----------------------> 
+
+        <section class="about">
+            <div class="row">
+                <div class="about-colm">
+                    <h1>About Harvard</h1>
+                    <p>Harvard is at the frontier of academic and intellectual discovery. Those who venture
+                    here—to learn, research, teach, work, and grow—join nearly four centuries of students and
+                    scholars in the pursuit of truth, knowledge, and a better world. Harvard has 12 degree-granting
+                    Schools and the Harvard Radcliffe Institute. We also offer countless non-degree opportunities
+                    for professional and lifelong learners, including executive education, continuing education,
+                    and online courses.</p>
+                    <a href="workingonit.html" target="_blank" class="hero-button">Visit us to know more!</a>
+                </div>
+
+                <div class="about-colm">
+                    <img src="harvard_img/about.jpg" alt="harvard buildling">
+                </div>
+            </div>
+        </section>
+        
+        <!------------------- FOOTER ----------------------->    
+        
+        <footer id="footer">    
+            <h4>ABOUT THE DEVELOPER</h4>
+            <p>I'm a pre-egineering student and I made this template in order to pratice what I have learned.</p>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/mahdimed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mahdyy02" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <p>Made with <i class="fa-solid fa-heart"></i> by Mohamed Mahdi</p>
+        </footer>
+    
+        <!-- JavaScript code to open and close navigation bar -->
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            var x = window.matchMedia("(max-width: 700px)")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+                if (x.matches) {
+                    navLinks.style.display = "inline-block";
+                }    
+            }
+
+
+            function hideMenu(){
+                navLinks.style.right = "-1000px";
+                if (x.matches) {
+                    navLinks.style.display = "none";
+                }    
+            }
+        </script>
+
+    </body> 
+</html>
