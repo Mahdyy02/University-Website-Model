@@ -174,10 +174,10 @@ nav .fa-bars, nav .fa-xmark{
         height: 100vh;
         width: 150px;
         top: 0;
-        right: -1000px;
+        right: 0;
         text-align: left;
         z-index: 3;
-        transition: 1s;
+        /* transition: 1s; */
     }
 
     .nav-links ul li::after{
@@ -225,6 +225,14 @@ nav .fa-bars, nav .fa-xmark{
         /* margin: 100px; */
     }
 
+}
+
+/* Fix the nav links bug when resize*/
+
+@media(min-width: 701px) {
+    .nav-links{
+        display: inline-block;
+    }
 }
 
 /* ---------- Course ------------ */
