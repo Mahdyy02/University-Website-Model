@@ -100,26 +100,7 @@
         </footer>
     
         <!-- JavaScript code to open and close navigation bar -->
-        
-        <script>
-            var navLinks = document.getElementById("navLinks");
-            var x = window.matchMedia("(max-width: 700px)")
-
-            function showMenu(){
-                navLinks.style.right = "0";
-                if (x.matches) {
-                    navLinks.style.display = "inline-block";
-                }    
-            }
-
-
-            function hideMenu(){
-                navLinks.style.right = "-1000px";
-                if (x.matches) {
-                    navLinks.style.display = "none";
-                }    
-            }
-        </script>
+        <script src="harvard_js/open-close.js"></script> 
 
     </body> 
 </html>
