@@ -36,7 +36,7 @@
                             <li><a href="about.html">ABOUT</a></li>
                             <li><a href="course.html">COURSE</a></li>
                             <li><a href="blog.html">BLOG</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
                         </ul>
                     </div>
                     <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -58,7 +58,7 @@
                     Schools and the Harvard Radcliffe Institute. We also offer countless non-degree opportunities
                     for professional and lifelong learners, including executive education, continuing education,
                     and online courses.</p>
-                    <a href="workingonit.html" target="_blank" class="hero-button">Visit us to know more!</a>
+                    <a href="workingonit.html" class="hero-button">Visit us to know more!</a>
                 </div>
 
                 <div class="about-colm">
@@ -81,26 +81,7 @@
         </footer>
     
         <!-- JavaScript code to open and close navigation bar -->
-        
-        <script>
-            var navLinks = document.getElementById("navLinks");
-            var x = window.matchMedia("(max-width: 700px)")
-
-            function showMenu(){
-                navLinks.style.right = "0";
-                if (x.matches) {
-                    navLinks.style.display = "inline-block";
-                }    
-            }
-
-
-            function hideMenu(){
-                navLinks.style.right = "-1000px";
-                if (x.matches) {
-                    navLinks.style.display = "none";
-                }    
-            }
-        </script>
+        <script src="harvard_js/open-close.js"></script> 
 
     </body> 
 </html>

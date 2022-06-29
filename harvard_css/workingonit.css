@@ -20,8 +20,24 @@ p{
 
 }
 
+@media(max-width: 700px) {
+    p{
+        margin: 50% auto;
+    }
+}
+
 @keyframes back {
     100%{
         background-position: 2000px 0;
     }
+}
+
+a{
+    font-size: 24px;
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    color: black;
+    top: 50px;
+    margin: 0  10px;
 }
