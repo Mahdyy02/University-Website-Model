@@ -3,7 +3,7 @@
 .contact-header{
     min-height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(15, 31, 96, 0.7)), url(../harvard_img/harvard_contact.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(15, 31, 96, 0.7)), url(../harvard_img/harvard_contactus.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -62,8 +62,8 @@
     /* height: 110%; */
 }
 
-.comment-box h3{
-    text-align: left;
+.contact-colm h3{
+    text-align: center;
     margin: 20px;
 }
 
