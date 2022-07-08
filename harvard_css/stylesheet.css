@@ -168,7 +168,7 @@ nav .fa-bars, nav .fa-xmark{
     }
     
     .nav-links{
-        position: absolute;
+        position: fixed;
         display: inline-block;
         background: rgb(0, 35, 192);
         height: 100vh;
