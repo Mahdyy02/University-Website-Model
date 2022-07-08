@@ -1,9 +1,9 @@
 var navLinks = document.getElementById("navLinks");
 
 function showMenu(){
-    navLinks.style.display = "inline-block";   
+    navLinks.style.transform = "translateX(0)"; 
 }
 
 function hideMenu(){
-    navLinks.style.display = "none";
+    navLinks.style.transform = "translateX(100%)";
 }
