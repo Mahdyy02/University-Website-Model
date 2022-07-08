@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Acme', sans-serif;
+    overflow-x: hidden;
 }
 
 body{
     background-color: rgb(62, 56, 56);
-
 }
 
 h1{
@@ -169,15 +169,16 @@ nav .fa-bars, nav .fa-xmark{
     
     .nav-links{
         position: absolute;
-        display: none;
+        display: inline-block;
         background: rgb(0, 35, 192);
         height: 100vh;
-        width: 150px;
+        width: 50%;
         top: 0;
         right: 0;
         text-align: left;
         z-index: 3;
-        /* transition: 1s; */
+        transform: translateX(100%);
+        transition: 1s;
     }
 
     .nav-links ul li::after{
@@ -203,6 +204,7 @@ nav .fa-bars, nav .fa-xmark{
         position: absolute;
         left: 1%;
         display: inline-block;
+        width: fit-content;
         color: rgb(255, 255, 255);
         margin: 10px;
         font-size: 20px;
