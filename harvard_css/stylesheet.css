@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Acme', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -170,7 +170,7 @@ nav .fa-bars, nav .fa-xmark{
     .nav-links{
         position: fixed;
         display: inline-block;
-        background: rgb(0, 35, 192);
+        background: rgba(0, 35, 192, .9);
         height: 100vh;
         width: 50%;
         top: 0;
